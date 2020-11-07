@@ -40,6 +40,15 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 3. Using mongoose, then create a Book schema.
 
+`
+title: varchar,
+authors: varchar,
+description: varchar,
+image: varchar, //??
+link: varchar, //??
+
+`
+
 4. At a minimum, books should have each of the following fields:
 
 * `title` - Title of the book from the Google Books API
