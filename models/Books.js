@@ -1,18 +1,18 @@
--- CREATE DATABASE google_booksDB;
--- USE google_booksDB;
+// -- CREATE DATABASE google_booksDB;
+// -- USE google_booksDB;
 
--- CREATE TABLE 'books'
--- (
---     'id' int NOT NULL AUTO_INCREMENT,
---     'title' varchar,
---     'authors' varchar,
---     'description' varchar,
---     'image' varchar, 
---     'link' varchar,
---     PRIMARY KEY (id)
--- );
+// -- CREATE TABLE 'books'
+// -- (
+// --     'id' int NOT NULL AUTO_INCREMENT,
+// --     'title' varchar,
+// --     'authors' varchar,
+// --     'description' varchar,
+// --     'image' varchar, 
+// --     'link' varchar,
+// --     PRIMARY KEY (id)
+// -- );
 
-const mongoose = require "mongoose";
+const mongoose = require ("mongoose");
 const Schema = mongoose.Schema;
 
 const BooksSchema = new Schema ({
@@ -37,5 +37,6 @@ const BooksSchema = new Schema ({
         required: "Link is required",
     }
 });
+
 const Books=mongoose.model ("Book", BooksSchema);
 module.exports = Books;

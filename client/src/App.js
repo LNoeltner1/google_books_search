@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+import Home from "./pages/Home";
+import Search from "./pages/Search";
+im
 import './App.css';
 
 function App() {
