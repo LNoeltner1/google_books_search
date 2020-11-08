@@ -3,7 +3,7 @@ import axios from 'axios';
 import Card from "../components/Card";
 
 const Saved = () => {
-    const[allBooks, setAllBooks] = useState ([]);
+    const [allBooks, setAllBooks] = useState ([]);
 
     useEffect(() => {
         renderBooks();
@@ -17,7 +17,7 @@ const Saved = () => {
     };
 
     return (
-        <div className="container" style={{ position: "relative" }}>
+        <div className="container">
             {allBooks.map((book) => (
                 <Card 
                     title={book.title}

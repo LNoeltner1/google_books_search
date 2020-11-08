@@ -8,7 +8,7 @@ const Search = () => {
 
     const handleInputChange = (e) => {
         e.preventDefault();
-        let {value} = e.target;
+        let { value } = e.target;
         setTitleState(value);
     };
     const handleSubmit = (e) => {
