@@ -1,0 +1,21 @@
+.nav-link {
+    margin: 10px;
+    float: right;
+}
+
+.navbar-brand {
+    font-size: larger;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    float: left;
+    padding: 10px;
+
+}
+.navContainer {
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    border-width: 3px;
+    margin-bottom: 20px;
+}

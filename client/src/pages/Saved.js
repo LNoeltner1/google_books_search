@@ -28,7 +28,7 @@ const Saved = () => {
                     id={book._id}
                     renderBooks={renderBooks}
                 />
-            ))};
+            ))}
         </div>
     );
 }
