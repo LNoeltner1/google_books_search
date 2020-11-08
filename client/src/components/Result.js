@@ -41,3 +41,4 @@ const Result = (props) => {
         </div>
     )
 }
+export default Result;
