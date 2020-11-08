@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
+const booksController = require("./controller/booksController");
 
 const PORT = process.env.PORT || 3001;
 
@@ -9,6 +10,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(booksController);
 
 app.use(express.static("client/build"));
 

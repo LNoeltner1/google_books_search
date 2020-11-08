@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 
-const Result = (props) => {
+const Results = (props) => {
     const [savedBook, setSavedBook] = useState([]);
     const [state, setState] = useState({
         title: props.title,
@@ -41,4 +41,4 @@ const Result = (props) => {
         </div>
     )
 }
-export default Result;
+export default Results;

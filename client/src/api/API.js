@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const URL = `http://googleapis.com/books/v1/volumes?q=`;
+const url = `http://googleapis.com/books/v1/volumes?q=`;
 
 export default {
-    getBook: function (userSearch) {
-        return axios.get(URL + userSearch);
+    getBook: function (term) {
+        return axios.get(url + term);
     },
-    getAll: function () {
+    getAllBooks: function () {
         return axios.get("/api/books");
     }
 };

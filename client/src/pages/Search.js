@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import API from "../api/API";
-import Result from "../components/Result";
+import Results from "../components/Results";
 
 const Search = () => {
     const [titleState, setTitleState] = useState("");
-    const [results, setResults] = useState({});
+    const [results, setResults] = useState([]);
 
     const handleInputChange = (e) => {
         e.preventDefault();
@@ -38,7 +38,7 @@ const Search = () => {
                 <div className="row">
                     <div className="col-md-9">
                         {results.map((res) => (
-                            <Result
+                            <Results
                                 key={res.selfLink}
                                 title={res.volumeInfo.title}
                                 authors={res.volumeInfo.authors}
@@ -51,7 +51,7 @@ const Search = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Search;
