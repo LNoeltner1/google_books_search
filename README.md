@@ -4,10 +4,6 @@
 
 Google Book Search
 
-## Screenshot
-
-![screenshot](public/images/budget_tracker_screenshot.png)
-
 ## Description
 
 This is a Google search app for books. Users can search for books, add any book to their 'Saved' list, update the list and remove items. 
